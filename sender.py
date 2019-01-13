@@ -5,12 +5,12 @@ class Sender():
 
     codes = {
     'ro' : "00011110 11100001 11110000 00001111",  # Radio on/off
-    'rp' : "00011110 11100001 11111011 00000100",  # Radio Modus Portable #gitignore
-    'rr' : "00011110 11100001 11010010 00101101",  # Radio Modus Radio #gitignore
-    'ru' : "00011110 11100001 01111000 10000111",  # Radio lauter #gitignore
-    'rd' : "00011110 11100001 11111000 00000111",  # Radio leiser #gitignore
-    'rl' : "00011110 11100001 00111000 11000111",  # Radio preset left #gitignore
-    'rh' : "00011110 11100001 11011000 00100111",  # Radio Preset right #gitignore
+    'rp' : "00011110 11100001 11111011 00000100",  # Radio Modus Portable
+    'rr' : "00011110 11100001 11010010 00101101",  # Radio Modus Radio
+    'ru' : "00011110 11100001 01111000 10000111",  # Radio volume up
+    'rd' : "00011110 11100001 11111000 00000111",  # Radio volume down
+    'rl' : "00011110 11100001 00111000 11000111",  # Radio preset left
+    'rh' : "00011110 11100001 11011000 00100111",  # Radio Preset right
      }
 
     def __init__(self):
