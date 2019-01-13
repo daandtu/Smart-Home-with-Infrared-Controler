@@ -18,10 +18,10 @@ try:
     pS.off()
     
     s = socket.socket()  # Create socket
-	#ad = socket.getaddrinfo('000.000.000.000', 4444)[0][-1]  # Change your IP and Port here
+    #ad = socket.getaddrinfo('000.000.000.000', 4444)[0][-1]  # Change your IP and Port here
     s.connect(ad)
     ss = wrap_socket(s)  # Wrap as a ssl socket
-	#ss.write("aPASSWORD".encode())  # Set your password here
+    #ss.write("aPASSWORD".encode())  # Set your password here
     ss.write("tu".encode())
     pS.on()
     irSender = Sender()
