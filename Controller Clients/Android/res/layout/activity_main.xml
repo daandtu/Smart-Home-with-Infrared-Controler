@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:padding="20dp"
+        android:text="@string/verbinden"
+        android:onClick="con"
+        android:visibility="gone"
+        android:id="@+id/verb"
+
+    />
+    
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:id="@+id/controlView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/TVverbindungen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv1"
+            android:text="@string/radio"
+            android:layout_marginBottom="@dimen/button_margin"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tv1"
+            android:id="@+id/radio_l1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:background="@color/colorAccent"
+                android:scaleType="fitCenter"
+                android:onClick="radioButton"
+                android:layout_height="@dimen/button_heigth"
+                android:padding="@dimen/button_padding"
+                android:drawableTop="@drawable/ic_on_off"
+                android:text="@string/on_off"
+                android:id="@+id/radio_onOff"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:onClick="radioButton"
+                android:background="@color/colorAccent"
+                android:padding="@dimen/button_padding"
+                android:id="@+id/radio_volume_up"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginStart="@dimen/button_margin"
+                android:drawableTop="@drawable/ic_volume_up"
+                android:text="@string/lauter"
+                android:layout_height="@dimen/button_heigth"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:onClick="radioButton"
+                android:id="@+id/radio_volume_down"
+                android:background="@color/colorAccent"
+                android:padding="@dimen/button_padding"
+                android:layout_marginStart="@dimen/button_margin"
+                android:drawableTop="@drawable/ic_volume_down"
+                android:text="@string/leiser"
+                android:layout_height="@dimen/button_heigth"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/radio_l1"
+                android:layout_marginTop="@dimen/button_padding"
+                android:id="@+id/radio_l2">
+
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:onClick="radioButton"
+                    android:background="@color/colorAccent"
+                    android:padding="@dimen/button_padding"
+                    android:id="@+id/radio_portable"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:drawableTop="@drawable/ic_portable"
+                    android:text="@string/portable"
+                    android:layout_height="@dimen/button_heigth"/>
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:onClick="radioButton"
+                    android:id="@+id/radio_radio"
+                    android:background="@color/colorAccent"
+                    android:padding="@dimen/button_padding"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:layout_marginStart="@dimen/button_margin"
+                    android:drawableTop="@drawable/ic_radio"
+                    android:text="@string/radio_radio"
+                    android:layout_height="@dimen/button_heigth"/>
+            <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:onClick="radioButton"
+                    android:background="@color/colorAccent"
+                    android:padding="@dimen/button_padding"
+                    android:id="@+id/radio_left"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:layout_marginStart="@dimen/button_margin"
+                    android:src="@drawable/ic_arrow_left"
+                    android:layout_height="@dimen/button_heigth"/>
+            <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:onClick="radioButton"
+                    android:id="@+id/radio_right"
+                    android:background="@color/colorAccent"
+                    android:padding="@dimen/button_padding"
+                    android:layout_marginStart="@dimen/button_margin"
+                    android:src="@drawable/ic_arrow_rigth"
+                    android:layout_height="@dimen/button_heigth"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
