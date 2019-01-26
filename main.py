@@ -5,6 +5,7 @@ from machine import Pin, freq
 from utime import sleep
 import sys
 from sender import Sender
+from sensors import Sensor
 
 freq(160000000)  # Set frequenzy to 160MHz for a more acurate ir decoding and encoding
 
