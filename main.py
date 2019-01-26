@@ -25,6 +25,7 @@ try:
     ss.write("tu".encode())
     pS.on()
     irSender = Sender()
+    sens = Sensor(ss, irSender)
     while True:
         data = ss.read(1).decode()  # Read one byte
         pS.off()
