@@ -1,6 +1,6 @@
 # Micropython Smart-Home with IR Controller
 
-This project is a small Smart Home system which uses multiple Micropython-capable microcontrollers as peripheral IOT devices. They can be controlled from a PC or mobile app. All components are connected via server.  
+This project is a small Smart Home system which uses multiple Micropython-capable microcontrollers as peripheral IOT devices. They can be controlled from a PC or mobile app. All components are connected via a server.  
 Furthermore, the microcontrollers can be used to send IR signals to different devices.  
 The structure is shown in the following image:
 ![System structure](Server/structure.png)
